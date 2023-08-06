@@ -1,0 +1,58 @@
+.rdtPicker {
+    position: relative;
+    border: 1px solid #dbdbdb;
+    background-color: #fff;
+    border-radius: 4px;
+    font-family: Tahoma, sans-serif;
+    font-size: 14px;
+    color: #4a4a4a;
+    width: 250px;
+    box-sizing: content-box;
+    z-index: 100;
+    margin-top: 8px;
+    box-shadow: 0 4px 12px rgb(0 0 0 / 15%);
+}
+
+
+
+.rdtPicker:before {
+    content: "";
+    position: absolute;
+    background: #fff;
+    border-top: 1px solid #dbdbdb;
+    border-right: 1px solid #dbdbdb;
+    width: 10px;
+    height: 10px;
+    z-index: -1;
+    left: 10px;
+    top: -6px;
+    transform: rotate(315deg);
+}
+
+.rdtPicker th {
+    border-bottom: 1px solid #efefef;
+}
+
+.rdtPicker th.rdtSwitch {
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    padding: 0 8px;
+    cursor: pointer;
+}
+
+.rdtPicker .dow {
+    color: #FF9A19;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: .8em;
+    font-weight: 400;
+}
+
+.rdtPicker td.rdtToday {
+    background-color: #5cc4ef;
+    font-weight: 400;
+}

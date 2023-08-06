@@ -1,0 +1,225 @@
+{
+    "title": "Job Application Form",
+    "description": "Form for applying Job",
+    "sections": [
+        {
+            "title": "Personal Information",
+            "id": "personal_information",
+            "fields": [
+                {
+                    "id": 2,
+                    "fieldName": "AircraftIdentification",
+                    "fieldLabel": "7 AIRCRAFT IDENTIFICATION",
+                    "subLabel": "ILMA-ALUKSEN TUNNUS",
+                    "value": "",
+                    "dataType": "string",
+                    "pretext": "",
+                    "posttext": "",
+                    "fieldInfo": "Enter the Aircraft ID \n 2-7 characters (No special characters allowed)",
+                    "fieldSeq": 2,
+                    "suggestionURL": "",
+                    "type": "System",
+                    "iconlink": null,
+                    "masterData": null,
+                    "style": {
+                        "FC": "sm",
+                        "colSm": "4",
+                        "colMd": "4",
+                        "colLg": "4",
+                        "colXl": "4"
+                    },
+                    "validations": {
+                        "required": {
+                            "value": true,
+                            "message": "Employee First Name is required"
+                        },
+                        "maxLength": {
+                            "value": 5,
+                            "message": "Must be exactly 5 characters"
+                        }
+                    },
+                    "watch": true,
+                    "isEnabled": true,
+                    "isRisk": false,
+                    "displayRule": null,
+                    "disableRule": null,
+                    "parentField": null
+                },
+                {
+                    "id": 2,
+                    "fieldName": "AircraaftIdentification",
+                    "fieldLabel": "7 AIRCRAFT IDENTIFICATION",
+                    "subLabel": "ILMA-ALUKSEN TUNNUS",
+                    "value": "",
+                    "dataType": "string",
+                    "pretext": "",
+                    "posttext": "",
+                    "fieldInfo": "Enter the Aircraft ID \n 2-7 characters (No special characters allowed)",
+                    "fieldSeq": 2,
+                    "suggestionURL": "",
+                    "type": "System",
+                    "iconlink": null,
+                    "masterData": null,
+                    "style": {
+                        "FC": "sm",
+                        "colSm": "4",
+                        "colMd": "4",
+                        "colLg": "4",
+                        "colXl": "4"
+                    },
+                    "isEnabled": true,
+                    "isRisk": false,
+                    "displayRule": {
+                        "fieldName": "AircraftIdentification",
+                        "value": "123"
+                    },
+                    "disableRule": null,
+                    "parentField": null
+                },
+                {
+                    "type": "email",
+                    "name": "email",
+                    "id": "email",
+                    "title": "Email Address"
+                },
+                {
+                    "type": "tel",
+                    "name": "phone_number",
+                    "id": "phone",
+                    "title": "Phone Number"
+                }
+            ]
+        },
+        {
+            "title": "Work Information",
+            "id": "work_information",
+            "fields": [
+                {
+                    "type": "text",
+                    "name": "current_employer",
+                    "id": "current_employer",
+                    "title": "Current Employer"
+                },
+                {
+                    "type": "text",
+                    "name": "current_role",
+                    "id": "current_role",
+                    "title": "Current Role"
+                },
+                {
+                    "type": "text",
+                    "name": "role_description",
+                    "id": "role_description",
+                    "title": "Role Description"
+                },
+                {
+                    "type": "number",
+                    "name": "experience",
+                    "id": "experience",
+                    "title": "Total Years of Experience"
+                }
+            ]
+        },
+        {
+            "title": "Social Media Links",
+            "id": "social_media_links",
+            "fields": [
+                {
+                    "type": "checkbox",
+                    "name": "include_portfolio",
+                    "id": "include_portfolio",
+                    "title": "Include Portfolio Links",
+                    "watch": true
+                },
+                {
+                    "type": "checkbox",
+                    "name": "include_social",
+                    "id": "include_social",
+                    "title": "Include Social Media Links",
+                    "watch": true
+                },
+                {
+                    "type": "url",
+                    "name": "portfolio_url",
+                    "id": "portfolio_url",
+                    "title": "Portfolio Link",
+                    "validationProps": {
+                        "required": "This is a mandatory field"
+                    },
+                    "dynamic": {
+                        "field": "include_portfolio",
+                        "value": true
+                    }
+                },
+                {
+                    "type": "url",
+                    "name": "social_url",
+                    "id": "social_url",
+                    "title": "Social Media Link",
+                    "validationProps": {
+                        "required": "This is a mandatory field"
+                    },
+                    "dynamic": {
+                        "field": "include_social",
+                        "value": true
+                    }
+                }
+            ]
+        },
+        {
+            "title": "Uploads",
+            "id": "uploads",
+            "fields": [
+                {
+                    "type": "file",
+                    "name": "select_resume",
+                    "id": "select_resume",
+                    "title": "Select Resume",
+                    "watch": true
+                },
+                {
+                    "id": 2,
+                    "fieldName": "saasdf",
+                    "fieldLabel": "7 AIRCRAFT IDENTIFICATION",
+                    "subLabel": "ILMA-ALUKSEN TUNNUS",
+                    "value": "",
+                    "dataType": "string",
+                    "pretext": "",
+                    "posttext": "",
+                    "fieldInfo": "Enter the Aircraft ID \n 2-7 characters (No special characters allowed)",
+                    "fieldSeq": 2,
+                    "suggestionURL": "",
+                    "type": "System",
+                    "iconlink": null,
+                    "masterData": null,
+                    "style": {
+                        "FC": "sm",
+                        "colSm": "4",
+                        "colMd": "4",
+                        "colLg": "4",
+                        "colXl": "4"
+                    },
+                    "validations": {
+                        "required": {
+                            "value": true,
+                            "message": "Employee First Name is required"
+                        },
+                        "maxLength": {
+                            "value": 5,
+                            "message": "Must be exactly 5 characters"
+                        }
+                    },
+                    "isEnabled": true,
+                    "isRisk": false,
+                    "displayRule": {
+                        "fieldName": "AircraftIdentification",
+                        "value": "123"
+                    },
+                    "disableRule": null,
+                    "parentField": null,
+                    "watch": true
+                }
+            ]
+        }
+    ]
+}

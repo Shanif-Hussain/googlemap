@@ -1,17 +1,27 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+// import ReactGoogleMap from './Component/MapComponent/GoogleMap';
+import ReactMapBox from "./Component/MapComponent/MapBox/index-pro";
+import Index from "./Component/FormComponent/InputElements";
+import DynamicForm from "./Component/FormComponent/DynamicForm";
+
+import myData from "./form.json";
+
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./css/custom.css";
+
+import calculator from "./Component/iife.js";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+    {/* <ReactGoogleMap showDefaultToolBar={true} /> */}
+    {/* <ReactMapBox showDefaultToolBar={true} /> */}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+    <div className="container">
+      <>{calculator.add(10, 50)}</>
+      <DynamicForm template={myData} />
+      {/* <React.Fragment><Index /></React.Fragment>*/}
+    </div>
+  </React.StrictMode>,
+  document.getElementById("root")
+);

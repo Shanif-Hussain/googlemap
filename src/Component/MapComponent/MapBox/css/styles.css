@@ -1,0 +1,26 @@
+.mapboxgl-ctrl-top-left{
+    display: none;
+}
+
+ul.list-group {
+    flex-direction: row !important;
+  }
+
+ul.list-group:after {
+  clear: both;
+  display: block;
+  content: "";
+}
+
+.list-group-item {
+    float: left;
+}
+
+#Toolbar{
+    z-index: 9999;
+    position: absolute;
+    top: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
