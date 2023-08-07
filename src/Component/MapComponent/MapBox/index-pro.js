@@ -9,7 +9,7 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 import { Toolbar, onDrawCreate, onDrawUpdate } from "./Utils";
 
 export default function ReactMapBox(props) {
-    mapboxgl.accessToken = "pk.eyJ1Ijoia2hhdHRha2FobWVkIiwiYSI6ImNrZG95em15bDBwb3MyeHR2YWVvdGkwbnEifQ.Ac_1yEJqfx1X8aw1y1yiag";      // Default Setting MapBox Access Token
+    mapboxgl.accessToken = "";      // Default Setting MapBox Access Token
     const MapBoxStyle = "mapbox://styles/mapbox/streets-v9";        // Default Setting MapBox Style
     const containerStyle = { width: '100vw', height: '100vh' };     // Default Setting MapBox Container Style
     const center = { lat: -26.766137, lng: 134.5458682 };           // Default Center position for Map to point on initial Load
