@@ -16,7 +16,7 @@ import { Toolbar, onDrawCreate, onDrawUpdate } from "./Utils";
 
 export default function ReactMapBox(props) {
     const Map = ReactMapboxGl({
-        accessToken: "pk.eyJ1IjoiZmFrZXVzZXJnaXRodWIiLCJhIjoiY2pwOGlneGI4MDNnaDN1c2J0eW5zb2ZiNyJ9.mALv0tCpbYUPtzT7YysA2g"
+        accessToken: ""
     });                                                             // Default Setting MapBox Access Token
     const MapBoxStyle = "mapbox://styles/mapbox/streets-v9";        // Default Setting MapBox Style
     const containerStyle = { width: '100vw', height: '100vh' };     // Default Setting MapBox Container Style
