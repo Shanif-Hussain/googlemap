@@ -20,7 +20,7 @@ export default function ReactGoogleMap(props) {
   return (
     //Default Settings need for Google Map
     <LoadScript
-      googleMapsApiKey="AIzaSyD0B0Wtjuwk4cqBw0biFCOyYeSkRw60EpA"
+      googleMapsApiKey=""
       libraries={["drawing"]}
     >
       {/* Google Map Component */}
